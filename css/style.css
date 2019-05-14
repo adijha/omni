@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* paricle js */
+
+canvas {
+  display: block;
+  /* vertical-align: bottom; */
+} /* ---- particles.js container ---- */
+#particles-js {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+/* particle ends here */
+
+body {
+  font-family: Ubuntu, monospace, sans-serif;
+  line-height: 1.4;
+  color: #fff;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+p {
+  margin: 0.75rem 0;
+  font-size: 1.3rem;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #93cb52;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-primary {
+  background: #93cb52;
+  color: #fff;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2.8rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+h2 {
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #93cb52;
+  padding: 1.1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.6rem !important;
+  font-weight: 500;
+  margin-bottom: .1rem;
+}
+
+.btn:hover {
+  background: #7ab436;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #222;
+  /* color: #fff; */
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+  padding-left: 3rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: #93cb52;
+  border-radius: 5px;
+}
+.up-home {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#test {
+  height: 100vh !important;
+  visibility: hidden;
+}
+
+/* Section: What We Do */
+#what {
+  height: 100vh !important;
+}
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  background: #93cb52;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Section: team Who We Are */
+#team {
+  height: 100vh !important;
+}
+#team .teams {
+  display: flex;
+  padding: 1rem;
+}
+
+#team .teams .team-member {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#team .teams .team-member img {
+  /* background: #93cb52; */
+  padding: 2rem;
+  border-radius: 50%;
+  /* margin-bottom: 1rem; */
+}
+#team .teams .team-member i {
+  /* background: #ced6c5; */
+  color: #fff;
+  padding: 0.1rem;
+  border-radius: 43%;
+  margin: 0.3rem;
+}
+#team .teams .team-member i:hover {
+  transform: scale(1.3);
+}
+
+/* project section */
+#projects {
+  height: 100vh;
+}
+#projects h2 {
+  /* text-align: center; */
+
+  padding-top: 18rem !important;
+}
+#projects .project {
+  display: flex;
+
+  text-align: center;
+  margin-top: 4rem;
+}
+#projects .project a {
+  flex: 1;
+  margin-top: 4rem;
+}
+.contactBtn {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.contact-button:hover {
+  background: #93cb52;
+}
+
+/* Section: Contact */
+#contact {
+  height: 100vh;
+  margin-bottom: 0;
+  text-align: center;
+}
+#contact p{
+  font-size: 1.6rem;
+}
+#contact .m-heading {
+  margin-top: 10rem !important;
+}
+#contact .contact-form {
+  line-height: 3rem;
+  /* margin-right: 0; */
+}
+#contact a {
+  font-size: 1.9rem;
+  text-decoration: none;
+  color: white;
+}
+#contact footer {
+  text-align: center;
+  background: #222;
+  margin-top: 7rem;
+  padding: 1rem !important;
+  font-size: 1.2rem;
+}
+
+#contact .contact-form input {
+  width: 50%;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 0.5rem;
+}
+::placeholder {
+  color: #7ab436;
+  font-size: 1rem;
+}
+
+#contact .contact-form #message {
+  width: 50%;
+  height: 150px;
+  padding: 4rem auto !important;
+}
+
+.sendBtn {
+  margin-top: 3% !important;
+  width: 15% !important;
+  border-radius: 60px !important;
+}
+
+.main-footer{
+  position: relative;
+  width : 100%;
+}
+
+@-webkit-keyframes sym {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes sym {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.sym {
+  -webkit-animation-name: sym;
+  animation-name: sym;
+}
+.ani{
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.ani.infi {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* social-icon hover  */
+.fa-twitter:hover{
+  color:#55ADED !important;
+}
+
+.fa-instagram:hover{
+  color : rgb(195, 42, 163)!important;
+}
+
+.fa-github:hover{
+  /* background: #000 !important; */
+  color :#586EF3!important;
+}
+
+
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+.tada:hover{
+  color : #93cb52;
+}
